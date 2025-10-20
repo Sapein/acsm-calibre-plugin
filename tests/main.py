@@ -536,10 +536,11 @@ class TestOther(unittest.TestCase):
     def test_lxml_lots_of_identical_elements(self): 
         try: 
             with open("dummy_file.xml", "r") as f:
-                content = f.read
+                content = f.read()
                 x = etree.fromstring(content)
             self.assertEqual(1, 1, "success")
         except: 
+            traceback.print_exc()
             self.assertEqual(1, 2, "force fail")
 
 
