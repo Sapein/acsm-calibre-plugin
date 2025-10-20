@@ -1,6 +1,6 @@
 freezegun
 mock ; python_version < '3.0'
-lxml
+lxml >= 6.0.2 ; python_version >= '3.0'
 pycryptodome
 rsa ; python_version >= '3.0'
 rsa <= 4.3 ; python_version < '3.0'
